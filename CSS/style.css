@@ -10,6 +10,8 @@ body{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/*主体*/
+
 .mainarea{
     background: rgba(0, 0, 0, 0.2);
     -webkit-backdrop-filter: blur(8px);
@@ -37,6 +39,7 @@ a{
     color: white;
 }
 
+/*回到顶部*/
 .backtop{
     color:#FFF;
 
@@ -58,6 +61,9 @@ a{
 
 }
 
+/*多端适配*/
+
+/*Backtop组件*/
 @media screen and (min-width:1135px) {
     .backtop{
         margin-left: 93%;
@@ -74,13 +80,29 @@ a{
 
 @media screen and (max-width:774px) {
     .backtop{
-        margin-left: 0px;
+        margin-left: 50%;
         margin-top: -1%;
         left:2% ;
         width: 96%;
     }
 }
 
+/*左右分流*/
+@media screen and (min-width:1280px){
+    .floatleft{
+        width: 50%;
+    }
+
+    .floatright{
+        flex: 1;
+    }
+
+    .forfloat{
+        display: flex;
+    }
+}
+
+/*字体*/
 @font-face {
     font-family: Exo;
     src: url(../font/Exo-VariableFont_wght.ttf);
@@ -89,6 +111,18 @@ a{
 @font-face {
     font-family: LXGW;
     src: url(../font/LXGWNeoXiHei.ttf);
+}
+
+/*表格*/
+
+table{
+    border: 2px solid #FFF;
+    border-radius: 12px;
+
+    table-layout: auto;
+    width: 100%;
+
+    text-align: center;
 }
 
 td{
@@ -101,12 +135,4 @@ th{
     border-radius: 8px;
 }
 
-table{
-    border: 2px solid #FFF;
-    border-radius: 12px;
 
-    table-layout: auto;
-    width: 100%;
-
-    text-align: center;
-}
