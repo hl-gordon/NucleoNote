@@ -4,7 +4,7 @@ body{
     background-clip: cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
-    font-family: Exo , LXGW;
+    font-family: Exo , HOS;
     overflow-x: hidden;
     background-color: black;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -105,12 +105,14 @@ a{
 /*字体*/
 @font-face {
     font-family: Exo;
+    font-display: swap;
     src: url(../font/Exo-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: LXGW;
-    src: url(../font/LXGWNeoXiHei.ttf);
+    font-family: HOS;
+    font-display: swap;
+    src: url(../font/HarmonyOS_Sans_SC_Regular.ttf);
 }
 
 /*表格*/
