@@ -21,9 +21,6 @@ body{
             display: none;
         }
 
-        .main_lobby{
-            
-        }
         body{
             font-size: 0.9em;
         }
@@ -94,7 +91,7 @@ body{
     .nn_top{
         position: fixed;
 
-        width: 114514vw;
+        width: 1021vw;
         margin-left: -4vw;
         margin-top: -2vw;
 
@@ -211,14 +208,20 @@ a:hover{
         }
     /*盒子*/
         .box{
-            border: 3px solid;
+            border: 2px solid;
             border-radius: 0.3em;
+        }
+
+    /*注释*/
+        .obsolote{
+            color: rgb(80, 80, 80);
+            font-style: italic;
+            font-size: 14px;
         }
 
 .main_lobby{
     background-color: white;
     border-radius: 0.5em ;
-    
     margin-top: 4em;
 }
 
@@ -273,4 +276,8 @@ th{
 
 .backtop:hover{
     background-color: blueviolet;
+}
+
+.fleft{
+    padding-bottom: 2rem;
 }
