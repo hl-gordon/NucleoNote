@@ -1,0 +1,431 @@
+/* body样式 */
+body{
+    background-color: gray;
+    background-image: url(https://picst.sunbangyan.cn/2023/09/08/10h31m4.jpg);
+    background-size: 100%;
+
+    background-position: 0vw 5vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+
+    
+}
+
+/* webkit专用：隐藏滚动条 */
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*回到顶部*/
+.backtop{
+
+    display: inline-flex;
+
+    background-color: white;
+
+    position: fixed;
+    z-index: 99;
+
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    border: 1px solid #39c5bb;
+
+    transition: background-color 0.3s;
+}
+
+.backtop:hover{
+    background-color: #39c5bb;
+}
+
+.a_backtop{
+    text-decoration: none;
+    color: #39c5bb;
+    transition: color 0.3s;
+}
+
+.a_backtop:hover{
+    color: #FFF;
+}
+
+/* 顶部抽屉栏 */
+.Lb_topbar{ /* 主区域 */
+    position: fixed;
+    left: 0vw;
+    top: -86.9vh;
+    
+    width: 100vw;
+    min-height: 90vh;
+    max-height: 90vh;
+    max-width: 100vw;
+
+    overflow-y: scroll;
+
+    background-color: white;
+
+    transition: top 1.2s;
+
+    z-index: 40;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.Lb_topbar:hover{
+    top: 0vh;
+}
+
+.top_textzone{
+    margin: 2em;
+}
+
+.Lb_topscr{ /* 顶部黑色条条 */
+    position: fixed;
+    left: 0vw;
+    top: -1.9vh;
+
+    width: 100vw;
+    height: 5vh;
+    min-height: 5vh;
+    max-height: 5vh;
+
+    background-color: black;
+    color: #FFF;
+    text-align: center;
+}
+
+.box_info{ /* 信息盒子 */
+    background-color: rgba(133, 221, 255, 0.622);
+    color: blue;
+
+    padding: 0.2em;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin: 0.1em;
+
+    display: flex;
+}
+
+
+
+/* (Bing AI)收缩区域 */
+.bing_collapsible {
+    background-color: #eee;
+    text-align: left;
+
+    cursor: pointer;
+
+    padding: 18px;
+    width: 100%;
+    border: none;
+
+    outline: none;
+
+    transition: background-color 0.5s;
+}
+
+  
+.active, .bing_collapsible:hover {
+    background-color: #ccc;
+}
+
+.bing_content {
+    padding: 0 18px;
+    overflow: hidden;
+    display: none;
+
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+/* 表格 */
+table{
+    border: 2px solid #39c5bb;
+
+    table-layout: auto;
+    width: 100%;
+
+    text-align: center;
+}
+
+td{
+    border: 1px solid #39c5bb;
+}
+
+th{
+    border: 1px solid #39c5bb;
+}
+
+/* Fixed组件稳定保持 */
+.fullscreen{
+    width: 1px;
+    height: 1px;
+}
+
+/* 便捷指令 */
+    /*黑幕*/
+    .hm{
+        background-color: black;
+        color: black;  
+        transition: color 0.2s;
+      }
+
+      .hm:hover{
+          color: white;
+      }
+
+  /*删除线*/
+      .del{
+          text-decoration: line-through;
+      }
+
+  /*使用主题色*/
+      .colorful{
+          color: #39c5bb;
+      }
+
+  /*斜体*/
+      .it{
+          font-style: italic;
+      }
+
+  /*粗体*/
+      .hv{
+          font-weight: bold;
+      }
+
+  /*正常*/
+      .nmf{
+          font-weight: normal;
+      }
+
+  /*居中文字*/
+      .center{
+          text-align: center;
+      }
+  /*盒子*/
+      .box{
+          border: 2px solid;
+      }
+
+  /*注释*/
+      .obsolote{
+          color: rgb(80, 80, 80);
+          font-style: italic;
+          font-size: 14px;
+      }
+
+/* 主要部分的写字区 */
+.maintext{
+    padding: 2%;
+}
+
+/* 主要部分 */
+.main_lobby{
+    background-color: white;
+}
+
+a{
+    color:blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+    text-decoration: none;
+}
+
+/* 多分辨率支持 */
+@media screen and (min-width:714px) { /*分辨率宽度大于714px*/
+    .nn_ph_titem_fr{
+        display: none;
+    }
+    .main_lobby{
+        margin-top: 4em;
+        margin-left:8vw;
+        margin-right: 8vw;
+
+        padding-bottom: 5em;
+
+        min-height: 15vw;
+    }
+
+}
+
+@media screen and (max-width:713px){ /*分辨率宽度小于713px*/     
+    /*配套:低分辨率导航内容*/
+    .nn_ph_titem_fr{
+        float: left;
+
+        margin-left: 5.5vw;
+        padding-top: 1.2em;
+    }
+
+    .nn_titem_rt{
+        display: none;
+    }
+
+    .nn_titem{
+        display: none;
+    }
+
+    body{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:416px) { /*分辨率宽度小于416px*/
+    .fullscreen{
+        margin: -2vh;
+    }
+}
+
+@media screen and (max-width:1024px) { /*分辨率宽度小于1024px*/
+    .main_lobby{
+        margin-left:-3vw;
+        margin-right:-3vw;
+        margin-top: 5em;
+        padding-bottom: 5em;
+
+        min-height: 15vw;
+    }
+    
+}
+
+/* 回到顶部:多分辨率 */
+@media screen and (min-width:1135px) { /*分辨率宽度大于1135px*/
+    .backtop{
+        margin-left: 93vw;
+        margin-top: 90vh;
+    }
+}
+
+@media screen and (max-width:1135px) { /*分辨率宽度小于1135px*/
+    .backtop{
+        margin-left: 90vw;
+        margin-top: 80vh;
+    }
+}
+
+@media screen and (max-width:774px) { /*分辨率宽度小于774px*/
+    .backtop{
+        margin-left: 65vw;
+        margin-top: 3vh;
+
+        left:2% ;
+        width: 96%;
+     }
+    .maintext{
+        padding-top: 15%;
+    }
+}
+
+/* 顶部抽屉栏的分三栏设定 */
+@media screen and (min-width : 1280px) { /*分辨率宽度大于1280px*/
+    .f3_forfloat{
+        display: flex;
+        flex-direction:row;
+    }
+    .f3_left{
+        min-width: calc(100% / 3);
+        max-width: calc(100% / 3);
+        left: 0vw;
+    }
+
+    .f3_middle{
+        min-width: calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+
+    .f3_right{
+        min-width: calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+
+    .textzone{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+}
+
+/* （旧版）顶部标题栏 */
+    .nn_top{
+        position: fixed;
+
+        width: 1021vw;
+        margin-left: -4vw;
+        margin-top: -2vw;
+
+        box-shadow: 10px 1px 3px 3px gray;
+
+        font-size: 0.97em;
+
+        background-color: white;
+        z-index: 99;
+    }
+
+    /*配套:导航内容*/
+    .nn_titem{
+        float: left;
+
+        padding-top: 1.2em;
+        margin-left: 2em;
+    }
+
+    .nn_titem_fr{ /*打头项目*/
+        float: left;
+
+        margin-left: 5.5vw;
+        padding-top: 1.2em;
+
+    }
+
+    .nn_titem_rt{ /*右侧项目*/
+        float: right;
+        
+    }
+
+    .birthday{
+        color:rgb(129, 100, 105);
+        background-color:rgba(247, 195, 204, 0.442);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /*警告段落*/
+.PAttention{
+    border-radius: 8px;
+    background-color: #FFAC003F;
+
+    display: flex;
+
+    overflow: hidden;
+}
+
+.PAttention_Bar{
+    background-color: #FFAC00;
+
+    top:0px;left: 0px;
+    width: 5px;
+    height: auto;
+}
+
+.PAttention_Text{
+    word-break: break-all;
+    padding-top: 15px;
+    margin-left: 8px;
+    padding-bottom: 15px;
+    margin-right: 8px;
+    font-family: Nexa;
+    
+
+    color: #604a0b;
+}
+
+@font-face {
+    font-family: Nexa;
+    src: url(../FV-EarlyA/Font/NexaDemo-Bold.ttf);
+}

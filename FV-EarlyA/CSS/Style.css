@@ -1,0 +1,108 @@
+@font-face {
+    font-family:Nexa;
+    src: url(../Font/NexaDemo-Bold.ttf);
+}
+
+/* body */
+body{
+    font-family: "Nexa" , "HarmonyOS Sans SC";
+}
+
+/* 上方工具栏 */
+.topbar{
+    position: fixed;
+    
+    top:-3vh;
+    left: 4vw;
+    width: 94vw;
+    min-height: 9vh;
+    max-height: 9vh;
+
+    border-radius: 15px;
+    background-color: white;
+    box-shadow:0px 2px 8px 1px gray;
+
+    z-index: 50;
+}
+
+/* 工具栏里的项目 */
+.topbar_item{
+    margin-top: 4.5vh;
+    margin-left: 2vw;
+
+    font-size: 16px;
+
+    color: #000;
+
+    transition: color 0.3s;
+}
+
+.topbar_item:hover{
+    color: gray;
+}
+
+/* 侧边栏 */
+.sidebar{
+    position: fixed;
+
+    top:1vh;
+    left:-23.5vw;
+    min-width: 25vw;
+    max-width: 25vw;
+    min-height: 98vh;
+    max-height: 98vh;
+
+    background-color: white;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow:0px 2px 8px 1px gray;
+
+    transition: left 1s;
+    
+    z-index: 52;
+}
+
+.sidebar:hover{ /* 将鼠标移到/用户点击侧边栏时，侧边栏的动画 */
+    left: -5vw;
+}
+
+/* 大图 */
+.topintroduce{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-size: auto 100%;
+    background-position:50%;
+    
+    width: 100%;
+    min-height: 60vh;
+
+    border-radius: 12px;
+}
+
+/* 文章显示区域 */
+.textzone{
+    margin-top: 8vh;
+    margin-left: 5vw;
+    margin-right: 3vw;
+    padding-bottom: 10vh;
+}
+
+/* 侧边栏的项目 */
+.sidebar_items{
+    display: block;
+    
+}
+
+.card1{
+    width: 30vw;
+    min-height: 25vh;
+
+    border-radius: 12px;
+
+    font-size: 48px;
+    color: #FFF;
+
+    padding-top: 6.5vh;
+}
+
+a{text-decoration: none;}

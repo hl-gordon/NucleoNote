@@ -1,0 +1,41 @@
+@media screen and (max-width:1024px) {
+    .P_topbar{
+        position: fixed;
+        
+        top:-3vh;
+        left: 2vw;
+        width: 96vw;
+        min-height: 9vh;
+        max-height: 9vh;
+    
+        border-radius: 15px;
+        background-color: white;
+        box-shadow:0px 2px 8px 1px gray;
+
+        z-index: 50;
+    }
+
+    .topintroduce{
+        min-height: 30vh;
+    }
+
+    .sidebar{
+        top:9vh;
+        left:-70vw;
+        min-width: 80vw;
+        max-width: 80vw;
+        min-height: 98vh;
+        max-height: 98vh;
+    }
+
+    /*消失部分*/
+    .topbar{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .P_topbar{
+        display: none;
+    }
+}
